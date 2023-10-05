@@ -23,7 +23,8 @@ body {font-family: Open Sans;}
     grid-template-areas: "cv-haut cv-haut cv-haut"
                          "cv-gauche cv-droite cv-droite"
                          "cv-gauche cv-droite cv-droite";
-    width: 1200px;
+    width: 80%;
+    max-width: 1200px;
     margin: 100px auto;
     box-shadow: 10px 10px 5px darkgray;
 }
