@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {font-family: Open Sans;}
+
+.cv-haut {
+    background-color: cornflowerblue;
+}
+
+.cv-gauche {
+    background-color: blue;
+}
+
+.cv-droite {
+    background-color: darkcyan;
+}
+
+.cv-entier {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "cv-haut cv-haut cv-haut"
+                         "cv-gauche cv-droite cv-droite"
+                         "cv-gauche cv-droite cv-droite";
+    width: 1200px;
+    margin: 100px auto;
+    box-shadow: 10px 10px 5px darkgray;
+}
+.cv-gauche {
+    grid-area: cv-gauche;
+    padding: 50px;
+    background-color: rgb(225, 225, 225);
+    border-top: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+}
+.cv-haut {
+    grid-area: cv-haut;
+    padding: 50px;
+    border-top: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+}
+.cv-droite {
+    grid-area: cv-droite;
+    padding: 50px;
+    display: grid;
+    border: 1px solid darkgray;
+}
+ul li::marker {
+    color: cornflowerblue;
+}
+h1 {
+    display: flex;
+    justify-content: end;
+}
+.info-perso li {
+    display: flex;
+    justify-content: end;
+    
+}
+img {
+    float: left;
+}
+    
+a {
+    color: blue;
+}
+
+a:hover {
+    color: chartreuse;
+}
